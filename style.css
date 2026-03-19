@@ -161,3 +161,24 @@ li.not-offered { display: block; margin-top: 0.5rem; border: none; }
     .hero h1 { font-size: 3rem; }
     .hero-stats { padding: 1.5rem; flex-direction: column; gap: 1.5rem; align-items: center; }
 }
+
+/* Photo Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
