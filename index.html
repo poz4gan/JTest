@@ -314,8 +314,19 @@
                         <input type="tel" name="phone" id="phone" placeholder="e.g. 5551234567 or (555) 123-4567">
                     </div>
                     <div class="form-group">
-                        <label for="message">Project Details</label>
-                        <textarea name="message" id="message" required placeholder="Tell us what you need help with..."></textarea>
+                        <label style="margin-bottom: 1rem;">What type of project is this?</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Repairs"> Repairs</label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Plumbing"> Plumbing & Bathroom</label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Installation"> Installation</label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Painting"> Painting</label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Assembly"> Furniture Assembly</label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Other"> Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Details (Optional)</label>
+                        <textarea name="message" id="message" placeholder="Feel free to add any specific details about your project..."></textarea>
                     </div>
                     <button type="submit" class="cta-btn primary-btn large" style="width: 100%;">Submit Request</button>
                 </form>

@@ -250,3 +250,8 @@ li.not-offered { display: block; margin-top: 0.5rem; border: none; }
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(242, 182, 0, 0.4);
 }
+
+/* Form Checkboxes */
+.checkbox-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 0.5rem; }
+.checkbox-label { display: flex !important; align-items: center; gap: 0.6rem; font-weight: 400 !important; cursor: pointer; color: var(--text-muted) !important; font-size: 0.95rem !important; margin-bottom: 0 !important; }
+.checkbox-label input[type="checkbox"] { width: 1.2rem !important; height: 1.2rem !important; min-width: 1.2rem; accent-color: var(--accent); margin: 0; padding: 0; background: rgba(0,0,0,0.2) !important; border: 2px solid rgba(255,255,255,0.2) !important; border-radius: 4px !important; cursor: pointer; transition: none; }

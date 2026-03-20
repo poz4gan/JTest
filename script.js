@@ -62,7 +62,13 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         const formData = new FormData(form);
         const object = {};
-        formData.forEach((value, key) => { object[key] = value });
+        formData.forEach((value, key) => { 
+            if (object[key]) {
+                object[key] = object[key] + ", " + value; // Commas for multiple checkbox picks
+            } else {
+                object[key] = value;
+            }
+        });
         const json = JSON.stringify(object);
 
         const submitBtn = form.querySelector('button[type="submit"]');
